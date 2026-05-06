@@ -1,0 +1,2363 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pedrosegarra.github.io/DAW_recupera/RA_Acceso_Remoto_ALUMNO/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Acceso Remoto - DAW Recuperación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ra-acceso-remoto-y-transferencia-de-ficheros" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="DAW Recuperación" class="md-header__button md-logo" aria-label="DAW Recuperación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DAW Recuperación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Acceso Remoto
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DAW Recuperación" class="md-nav__button md-logo" aria-label="DAW Recuperación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DAW Recuperación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceso Remoto
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceso Remoto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparativa-de-protocolos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparativa de protocolos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ftp-file-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. FTP — File Transfer Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. FTP — File Transfer Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-arquitectura-y-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Arquitectura y funcionamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-instalacion-y-configuracion-de-vsftpd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Instalación y configuración de vsftpd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-comandos-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Comandos FTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ftps-ftp-sobre-tls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FTPS — FTP sobre TLS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. FTPS — FTP sobre TLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Conceptos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-configuracion-de-vsftpd-con-tls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Configuración de vsftpd con TLS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sftp-ssh-file-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. SFTP — SSH File Transfer Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. SFTP — SSH File Transfer Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-que-es-sftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Qué es SFTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-instalacion-del-servidor-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Instalación del servidor SSH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-configuracion-de-usuario-solo-sftp-con-chroot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Configuración de usuario solo-SFTP con chroot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-autenticacion-por-clave-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Autenticación por clave pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-comandos-sftp-interactivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Comandos SFTP interactivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-sftp-no-interactivo-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 SFTP no interactivo (scripts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scp-secure-copy-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. SCP — Secure Copy Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. SCP — Secure Copy Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Conceptos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Ejemplos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rsync-sincronizacion-incremental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. rsync — Sincronización incremental
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. rsync — Sincronización incremental">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-que-es-rsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Qué es rsync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-opciones-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Opciones clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-ejemplos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Ejemplos de uso
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-automatizacion-con-makefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Automatización con Makefile
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Automatización con Makefile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-por-que-makefile-en-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Por qué Makefile en despliegue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-makefile-completo-de-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Makefile completo de despliegue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-resumen-de-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Resumen de targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-herramientas-y-flujos-modernos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Herramientas y flujos modernos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Herramientas y flujos modernos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-filezilla-cliente-grafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 FileZilla (cliente gráfico)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-lftp-cliente-avanzado-por-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 lftp (cliente avanzado por CLI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-integracion-con-cicd-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Integración con CI/CD (GitHub Actions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-comparativa-de-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Comparativa de herramientas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ejercicios-resueltos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ejercicios resueltos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ejercicios resueltos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#er-01-instalar-y-configurar-vsftpd-en-modo-pasivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER-01 — Instalar y configurar vsftpd en modo pasivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#er-02-configurar-sftp-con-chroot-y-clave-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER-02 — Configurar SFTP con chroot y clave pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#er-03-despliegue-con-rsync-y-makefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER-03 — Despliegue con rsync y Makefile
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Prácticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Prácticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#practica-1-ftp-con-vsftpd-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 1 — FTP con vsftpd (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practica-2-sftp-con-clave-publica-90-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 2 — SFTP con clave pública (90 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practica-3-rsync-makefile-de-despliegue-90-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 3 — rsync + Makefile de despliegue (90 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practica-4-ftps-con-certificado-tls-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 4 — FTPS con certificado TLS (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Examen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Examen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parte-a-preguntas-teoricas-3-puntos-05-pt-cada-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte A — Preguntas teóricas (3 puntos — 0,5 pt cada una)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-b-opcion-multiple-2-puntos-025-pt-cada-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte B — Opción múltiple (2 puntos — 0,25 pt cada una)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-c-supuesto-practico-5-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte C — Supuesto práctico (5 puntos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparativa-de-protocolos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparativa de protocolos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ftp-file-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. FTP — File Transfer Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. FTP — File Transfer Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-arquitectura-y-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Arquitectura y funcionamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-instalacion-y-configuracion-de-vsftpd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Instalación y configuración de vsftpd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-comandos-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Comandos FTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ftps-ftp-sobre-tls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FTPS — FTP sobre TLS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. FTPS — FTP sobre TLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Conceptos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-configuracion-de-vsftpd-con-tls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Configuración de vsftpd con TLS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sftp-ssh-file-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. SFTP — SSH File Transfer Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. SFTP — SSH File Transfer Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-que-es-sftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Qué es SFTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-instalacion-del-servidor-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Instalación del servidor SSH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-configuracion-de-usuario-solo-sftp-con-chroot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Configuración de usuario solo-SFTP con chroot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-autenticacion-por-clave-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Autenticación por clave pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-comandos-sftp-interactivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Comandos SFTP interactivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-sftp-no-interactivo-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 SFTP no interactivo (scripts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scp-secure-copy-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. SCP — Secure Copy Protocol
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. SCP — Secure Copy Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Conceptos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Ejemplos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rsync-sincronizacion-incremental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. rsync — Sincronización incremental
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. rsync — Sincronización incremental">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-que-es-rsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Qué es rsync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-opciones-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Opciones clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-ejemplos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Ejemplos de uso
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-automatizacion-con-makefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Automatización con Makefile
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Automatización con Makefile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-por-que-makefile-en-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Por qué Makefile en despliegue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-makefile-completo-de-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Makefile completo de despliegue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-resumen-de-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Resumen de targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-herramientas-y-flujos-modernos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Herramientas y flujos modernos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Herramientas y flujos modernos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-filezilla-cliente-grafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 FileZilla (cliente gráfico)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-lftp-cliente-avanzado-por-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 lftp (cliente avanzado por CLI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-integracion-con-cicd-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Integración con CI/CD (GitHub Actions)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-comparativa-de-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Comparativa de herramientas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ejercicios-resueltos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ejercicios resueltos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ejercicios resueltos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#er-01-instalar-y-configurar-vsftpd-en-modo-pasivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER-01 — Instalar y configurar vsftpd en modo pasivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#er-02-configurar-sftp-con-chroot-y-clave-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER-02 — Configurar SFTP con chroot y clave pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#er-03-despliegue-con-rsync-y-makefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER-03 — Despliegue con rsync y Makefile
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Prácticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Prácticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#practica-1-ftp-con-vsftpd-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 1 — FTP con vsftpd (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practica-2-sftp-con-clave-publica-90-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 2 — SFTP con clave pública (90 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practica-3-rsync-makefile-de-despliegue-90-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 3 — rsync + Makefile de despliegue (90 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practica-4-ftps-con-certificado-tls-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRÁCTICA 4 — FTPS con certificado TLS (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Examen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Examen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parte-a-preguntas-teoricas-3-puntos-05-pt-cada-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte A — Preguntas teóricas (3 puntos — 0,5 pt cada una)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-b-opcion-multiple-2-puntos-025-pt-cada-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte B — Opción múltiple (2 puntos — 0,25 pt cada una)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-c-supuesto-practico-5-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte C — Supuesto práctico (5 puntos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ra-acceso-remoto-y-transferencia-de-ficheros">RA — Acceso Remoto y Transferencia de Ficheros</h1>
+<p><strong>Módulo:</strong> Despliegue de Aplicaciones Web · CFGS DAW<br />
+<strong>Entorno:</strong> Ubuntu 24.04 LTS<br />
+<strong>Contenido:</strong> Temario · Ejercicios · Prácticas · Examen</p>
+<hr />
+<h2 id="indice">Índice</h2>
+<ol>
+<li><a href="#1-introducción">Introducción</a></li>
+<li><a href="#2-ftp--file-transfer-protocol">FTP — File Transfer Protocol</a></li>
+<li><a href="#3-ftps--ftp-sobre-tls">FTPS — FTP sobre TLS</a></li>
+<li><a href="#4-sftp--ssh-file-transfer-protocol">SFTP — SSH File Transfer Protocol</a></li>
+<li><a href="#5-scp--secure-copy-protocol">SCP — Secure Copy Protocol</a></li>
+<li><a href="#6-rsync--sincronización-incremental">rsync — Sincronización incremental</a></li>
+<li><a href="#7-automatización-con-makefile">Automatización con Makefile</a></li>
+<li><a href="#8-herramientas-y-flujos-modernos">Herramientas y flujos modernos</a></li>
+<li><a href="#9-ejercicios-resueltos">Ejercicios resueltos</a></li>
+<li><a href="#10-prácticas">Prácticas</a></li>
+<li><a href="#11-examen">Examen</a></li>
+</ol>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>En el despliegue de aplicaciones web es imprescindible transferir ficheros entre la máquina de desarrollo y el servidor de producción. Históricamente FTP fue el estándar, pero sus deficiencias de seguridad han impulsado la adopción de alternativas cifradas.</p>
+<h3 id="comparativa-de-protocolos">Comparativa de protocolos</h3>
+<table>
+<thead>
+<tr>
+<th>Protocolo</th>
+<th>Puerto</th>
+<th>Cifrado</th>
+<th>Autenticación</th>
+<th>Uso recomendado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTP</td>
+<td>21 / 20 (datos)</td>
+<td>❌ No</td>
+<td>Usuario/contraseña en claro</td>
+<td>Redes internas aisladas</td>
+</tr>
+<tr>
+<td>FTPS</td>
+<td>21 (explícito) / 990 (implícito)</td>
+<td>✅ TLS/SSL</td>
+<td>Certificado + usuario</td>
+<td>Legado con cifrado</td>
+</tr>
+<tr>
+<td>SFTP</td>
+<td>22</td>
+<td>✅ SSH completo</td>
+<td>Clave pública / contraseña</td>
+<td>Producción general</td>
+</tr>
+<tr>
+<td>SCP</td>
+<td>22</td>
+<td>✅ SSH completo</td>
+<td>Clave pública / contraseña</td>
+<td>Copias puntuales</td>
+</tr>
+<tr>
+<td>rsync</td>
+<td>22 (sobre SSH)</td>
+<td>✅ SSH opcional</td>
+<td>Clave pública / contraseña</td>
+<td>Sincronización incremental</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-ftp-file-transfer-protocol">2. FTP — File Transfer Protocol</h2>
+<h3 id="21-arquitectura-y-funcionamiento">2.1 Arquitectura y funcionamiento</h3>
+<p>FTP (RFC 959) separa el canal de control (puerto 21) del canal de datos. Hay dos modos:</p>
+<ul>
+<li><strong>Modo activo:</strong> el servidor inicia la conexión de datos hacia el cliente (puerto 20). Problemático con NAT y firewalls.</li>
+<li><strong>Modo pasivo (PASV):</strong> el cliente inicia la conexión de datos hacia un puerto alto del servidor. Necesario en entornos modernos.</li>
+</ul>
+<h3 id="22-instalacion-y-configuracion-de-vsftpd">2.2 Instalación y configuración de vsftpd</h3>
+<pre><code class="language-bash"># Instalación
+sudo apt update &amp;&amp; sudo apt install vsftpd -y
+
+# Backup de la configuración
+sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak
+</code></pre>
+<p>Parámetros clave en <code>/etc/vsftpd.conf</code>:</p>
+<pre><code class="language-ini">anonymous_enable=NO        # Deshabilitar acceso anónimo
+local_enable=YES           # Permitir usuarios locales
+write_enable=YES           # Permitir escritura
+chroot_local_user=YES      # Enjaular usuarios en su home
+allow_writeable_chroot=YES # Necesario si el home es editable
+pasv_enable=YES            # Modo pasivo
+pasv_min_port=40000        # Rango de puertos pasivos
+pasv_max_port=50000
+pasv_address=&lt;IP_PUBLICA&gt;  # IP pública del servidor
+</code></pre>
+<pre><code class="language-bash">sudo systemctl restart vsftpd
+sudo systemctl enable vsftpd
+sudo ufw allow 21/tcp
+sudo ufw allow 40000:50000/tcp
+</code></pre>
+<h3 id="23-comandos-ftp">2.3 Comandos FTP</h3>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ftp &lt;host&gt;</code></td>
+<td>Conectar al servidor</td>
+</tr>
+<tr>
+<td><code>ls</code> / <code>dir</code></td>
+<td>Listar directorio remoto</td>
+</tr>
+<tr>
+<td><code>get &lt;fichero&gt;</code></td>
+<td>Descargar fichero</td>
+</tr>
+<tr>
+<td><code>put &lt;fichero&gt;</code></td>
+<td>Subir fichero</td>
+</tr>
+<tr>
+<td><code>mget</code> / <code>mput</code></td>
+<td>Transferencia múltiple</td>
+</tr>
+<tr>
+<td><code>binary</code></td>
+<td>Modo binario (imágenes, ejecutables)</td>
+</tr>
+<tr>
+<td><code>passive</code></td>
+<td>Alternar modo pasivo</td>
+</tr>
+<tr>
+<td><code>bye</code> / <code>quit</code></td>
+<td>Cerrar sesión</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Limitación:</strong> FTP transmite usuario, contraseña y datos en <strong>texto plano</strong>. Nunca usar sobre redes no confiables sin cifrado adicional.</p>
+</blockquote>
+<hr />
+<h2 id="3-ftps-ftp-sobre-tls">3. FTPS — FTP sobre TLS</h2>
+<h3 id="31-conceptos">3.1 Conceptos</h3>
+<p>FTPS (RFC 4217) añade cifrado TLS al protocolo FTP. Dos variantes:</p>
+<ul>
+<li><strong>FTPS explícito (FTPES):</strong> la conexión empieza como FTP normal y se negocia TLS con <code>AUTH TLS</code>. Puerto 21.</li>
+<li><strong>FTPS implícito:</strong> TLS se establece desde el inicio. Puerto 990. Considerado obsoleto.</li>
+</ul>
+<h3 id="32-configuracion-de-vsftpd-con-tls">3.2 Configuración de vsftpd con TLS</h3>
+<pre><code class="language-bash"># Generar certificado autofirmado
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+  -keyout /etc/ssl/private/vsftpd.key \
+  -out /etc/ssl/certs/vsftpd.crt
+</code></pre>
+<p>Añadir a <code>/etc/vsftpd.conf</code>:</p>
+<pre><code class="language-ini">ssl_enable=YES
+force_local_logins_ssl=YES
+force_local_data_ssl=YES
+ssl_tlsv1_2=YES
+ssl_sslv2=NO
+ssl_sslv3=NO
+rsa_cert_file=/etc/ssl/certs/vsftpd.crt
+rsa_private_key_file=/etc/ssl/private/vsftpd.key
+</code></pre>
+<hr />
+<h2 id="4-sftp-ssh-file-transfer-protocol">4. SFTP — SSH File Transfer Protocol</h2>
+<h3 id="41-que-es-sftp">4.1 Qué es SFTP</h3>
+<p>SFTP <strong>no es FTP sobre SSH</strong>. Es un protocolo completamente diferente (parte del estándar SSH-2) que aprovecha la conexión SSH para ofrecer una interfaz de sistema de ficheros remoto. Todo el tráfico viaja cifrado por el canal SSH (puerto 22).</p>
+<blockquote>
+<p>💡 Un servidor SSH (<code>openssh-server</code>) ya incluye el subsistema SFTP por defecto.</p>
+</blockquote>
+<h3 id="42-instalacion-del-servidor-ssh">4.2 Instalación del servidor SSH</h3>
+<pre><code class="language-bash">sudo apt install openssh-server -y
+sudo systemctl enable ssh
+sudo systemctl start ssh
+</code></pre>
+<h3 id="43-configuracion-de-usuario-solo-sftp-con-chroot">4.3 Configuración de usuario solo-SFTP con chroot</h3>
+<p>Añadir al final de <code>/etc/ssh/sshd_config</code>:</p>
+<pre><code>Match User sftp_user
+    ChrootDirectory /var/www/html
+    ForceCommand internal-sftp
+    AllowTcpForwarding no
+    X11Forwarding no
+</code></pre>
+<pre><code class="language-bash"># El directorio raíz del chroot DEBE pertenecer a root
+sudo chown root:root /var/www/html
+sudo chmod 755 /var/www/html
+sudo systemctl restart ssh
+</code></pre>
+<h3 id="44-autenticacion-por-clave-publica">4.4 Autenticación por clave pública</h3>
+<pre><code class="language-bash"># En el cliente: generar par de claves
+ssh-keygen -t ed25519 -C &quot;deploy@empresa.com&quot;
+
+# Copiar clave pública al servidor
+ssh-copy-id -i ~/.ssh/id_ed25519.pub usuario@servidor
+
+# Verificar
+ssh -i ~/.ssh/id_ed25519 usuario@servidor
+</code></pre>
+<h3 id="45-comandos-sftp-interactivos">4.5 Comandos SFTP interactivos</h3>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sftp usuario@host</code></td>
+<td>Conectar</td>
+</tr>
+<tr>
+<td><code>ls</code> / <code>lls</code></td>
+<td>Listar remoto / local</td>
+</tr>
+<tr>
+<td><code>cd</code> / <code>lcd</code></td>
+<td>Cambiar directorio remoto / local</td>
+</tr>
+<tr>
+<td><code>get &lt;fichero&gt;</code></td>
+<td>Descargar</td>
+</tr>
+<tr>
+<td><code>put &lt;fichero&gt;</code></td>
+<td>Subir</td>
+</tr>
+<tr>
+<td><code>mget *.html</code></td>
+<td>Subir múltiples ficheros</td>
+</tr>
+<tr>
+<td><code>mkdir</code> / <code>rmdir</code></td>
+<td>Crear / eliminar directorio remoto</td>
+</tr>
+<tr>
+<td><code>chmod 644 fichero</code></td>
+<td>Cambiar permisos en remoto</td>
+</tr>
+<tr>
+<td><code>exit</code> / <code>bye</code></td>
+<td>Cerrar sesión</td>
+</tr>
+</tbody>
+</table>
+<h3 id="46-sftp-no-interactivo-scripts">4.6 SFTP no interactivo (scripts)</h3>
+<pre><code class="language-bash"># Subir un fichero en modo batch
+sftp -b - usuario@servidor &lt;&lt;EOF
+put /local/app.tar.gz /var/www/html/app.tar.gz
+EOF
+
+# Con clave específica
+sftp -i ~/.ssh/id_ed25519 -b comandos.txt usuario@servidor
+</code></pre>
+<hr />
+<h2 id="5-scp-secure-copy-protocol">5. SCP — Secure Copy Protocol</h2>
+<h3 id="51-conceptos">5.1 Conceptos</h3>
+<p>SCP usa SSH para transferir ficheros de forma cifrada. Su sintaxis recuerda al comando <code>cp</code>. Es ideal para copias puntuales; para sincronización incremental, <code>rsync</code> es superior.</p>
+<blockquote>
+<p>⚠️ OpenSSH deprecó el protocolo SCP original en 2022. Las versiones modernas usan SFTP por debajo, pero la sintaxis del comando <code>scp</code> sigue siendo válida.</p>
+</blockquote>
+<h3 id="52-ejemplos">5.2 Ejemplos</h3>
+<pre><code class="language-bash"># Fichero local → servidor
+scp fichero.txt usuario@servidor:/ruta/destino/
+
+# Directorio completo (recursivo)
+scp -r ./dist/ usuario@servidor:/var/www/html/
+
+# Con clave específica y puerto no estándar
+scp -i ~/.ssh/id_ed25519 -P 2222 app.zip usuario@servidor:/tmp/
+
+# Fichero del servidor → local
+scp usuario@servidor:/var/log/nginx/error.log ./logs/
+
+# Entre dos servidores remotos
+scp usuario1@origen:/ruta/fich usuario2@destino:/ruta/
+</code></pre>
+<hr />
+<h2 id="6-rsync-sincronizacion-incremental">6. rsync — Sincronización incremental</h2>
+<h3 id="61-que-es-rsync">6.1 Qué es rsync</h3>
+<p>rsync transfiere solo las <strong>diferencias</strong> entre ficheros (algoritmo delta). Puede funcionar sobre SSH (recomendado), protocolo propio o localmente.</p>
+<ul>
+<li>Transferencia incremental: solo transfiere bloques modificados.</li>
+<li>Preserva permisos, propietarios, timestamps y enlaces simbólicos.</li>
+<li>Admite exclusiones, filtros y modo dry-run (simulación).</li>
+<li>Base de muchas herramientas de despliegue modernas.</li>
+</ul>
+<h3 id="62-opciones-clave">6.2 Opciones clave</h3>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-a</code> (<code>--archive</code>)</td>
+<td>Modo archivo: preserva permisos, propietario, timestamps, links</td>
+</tr>
+<tr>
+<td><code>-v</code> (<code>--verbose</code>)</td>
+<td>Muestra los ficheros transferidos</td>
+</tr>
+<tr>
+<td><code>-z</code> (<code>--compress</code>)</td>
+<td>Comprime durante la transferencia</td>
+</tr>
+<tr>
+<td><code>--delete</code></td>
+<td>Borra en destino los ficheros que no existen en origen</td>
+</tr>
+<tr>
+<td><code>--exclude='patrón'</code></td>
+<td>Excluye ficheros/directorios</td>
+</tr>
+<tr>
+<td><code>--dry-run</code> (<code>-n</code>)</td>
+<td>Simula sin ejecutar</td>
+</tr>
+<tr>
+<td><code>-e 'ssh -p 2222'</code></td>
+<td>Usa SSH con puerto personalizado</td>
+</tr>
+<tr>
+<td><code>--progress</code></td>
+<td>Muestra progreso de cada fichero</td>
+</tr>
+</tbody>
+</table>
+<h3 id="63-ejemplos-de-uso">6.3 Ejemplos de uso</h3>
+<pre><code class="language-bash"># Sincronizar directorio local con servidor
+rsync -avz ./dist/ usuario@servidor:/var/www/html/
+
+# Con eliminación de ficheros obsoletos
+rsync -avz --delete ./dist/ usuario@servidor:/var/www/html/
+
+# Excluir node_modules y .git
+rsync -avz --exclude='node_modules' --exclude='.git' ./ usuario@servidor:/app/
+
+# Simular antes de ejecutar (recomendado antes de --delete)
+rsync -avzn --delete ./dist/ usuario@servidor:/var/www/html/
+
+# Con clave específica y puerto
+rsync -avz -e 'ssh -i ~/.ssh/id_ed25519 -p 2222' ./dist/ usuario@servidor:/var/www/html/
+</code></pre>
+<hr />
+<h2 id="7-automatizacion-con-makefile">7. Automatización con Makefile</h2>
+<h3 id="71-por-que-makefile-en-despliegue">7.1 Por qué Makefile en despliegue</h3>
+<p>Make permite definir tareas (<em>targets</em>) y sus dependencias. En despliegue web, un Makefile centraliza todos los comandos, evita errores de escritura manual y documenta el proceso de forma reproducible.</p>
+<h3 id="72-makefile-completo-de-despliegue">7.2 Makefile completo de despliegue</h3>
+<pre><code class="language-makefile"># Makefile para despliegue de aplicación web
+# Uso: make &lt;target&gt;
+
+# ── Configuración ────────────────────────────────────────────
+SERVER      := usuario@servidor.ejemplo.com
+REMOTE_DIR  := /var/www/html
+LOCAL_DIR   := ./dist
+SSH_KEY     := ~/.ssh/id_ed25519
+SSH_PORT    := 22
+BACKUP_DIR  := /backups/web
+
+SSH         := ssh -i $(SSH_KEY) -p $(SSH_PORT)
+RSYNC_CMD   := rsync -avz -e 'ssh -i $(SSH_KEY) -p $(SSH_PORT)'
+
+# ── Targets ──────────────────────────────────────────────────
+.PHONY: all check backup deploy sync rollback clean info
+
+all: info
+
+info:
+    @echo 'Targets disponibles:'
+    @echo '  make deploy   - Despliega con rsync (incremental)'
+    @echo '  make sync     - Sincroniza y elimina obsoletos'
+    @echo '  make backup   - Crea backup en servidor'
+    @echo '  make rollback - Restaura último backup'
+    @echo '  make check    - Comprueba conectividad SSH'
+    @echo '  make clean    - Limpia dist/ local'
+
+check:
+    @echo 'Comprobando conexión SSH...'
+    $(SSH) $(SERVER) 'echo OK: conexión establecida'
+
+backup:
+    @echo 'Creando backup en servidor...'
+    $(SSH) $(SERVER) 'cp -r $(REMOTE_DIR) $(BACKUP_DIR)/backup_$(shell date +%Y%m%d_%H%M%S)'
+    @echo 'Backup completado.'
+
+deploy: check
+    @echo 'Desplegando $(LOCAL_DIR) → $(SERVER):$(REMOTE_DIR)'
+    $(RSYNC_CMD) $(LOCAL_DIR)/ $(SERVER):$(REMOTE_DIR)/
+    @echo 'Despliegue completado.'
+
+sync: check
+    @echo 'Sincronizando con eliminación de obsoletos...'
+    $(RSYNC_CMD) --delete --exclude='.git' --exclude='node_modules' \
+      $(LOCAL_DIR)/ $(SERVER):$(REMOTE_DIR)/
+    @echo 'Sincronización completada.'
+
+rollback:
+    @echo 'Restaurando último backup...'
+    $(SSH) $(SERVER) 'LAST=$$(ls -td $(BACKUP_DIR)/backup_* | head -1); \
+      rm -rf $(REMOTE_DIR)/*; cp -r $$LAST/. $(REMOTE_DIR)/'
+    @echo 'Rollback completado.'
+
+clean:
+    @echo 'Limpiando directorio local dist/'
+    rm -rf $(LOCAL_DIR)/*
+</code></pre>
+<h3 id="73-resumen-de-targets">7.3 Resumen de targets</h3>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>make check</code></td>
+<td>Verifica que la conexión SSH funciona</td>
+</tr>
+<tr>
+<td><code>make backup</code></td>
+<td>Hace backup del servidor</td>
+</tr>
+<tr>
+<td><code>make deploy</code></td>
+<td>Despliega incrementalmente (rsync)</td>
+</tr>
+<tr>
+<td><code>make sync</code></td>
+<td>Despliega y elimina ficheros obsoletos</td>
+</tr>
+<tr>
+<td><code>make rollback</code></td>
+<td>Restaura el último backup</td>
+</tr>
+<tr>
+<td><code>make clean</code></td>
+<td>Limpia el directorio local <code>dist/</code></td>
+</tr>
+<tr>
+<td><code>make info</code></td>
+<td>Muestra la ayuda de targets disponibles</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Buena práctica:</strong> ejecuta siempre <code>make backup</code> antes de <code>make sync</code> en producción. El flag <code>--delete</code> puede eliminar ficheros que no estén en el repositorio local.</p>
+</blockquote>
+<hr />
+<h2 id="8-herramientas-y-flujos-modernos">8. Herramientas y flujos modernos</h2>
+<h3 id="81-filezilla-cliente-grafico">8.1 FileZilla (cliente gráfico)</h3>
+<p>Cliente FTP/SFTP/FTPS más popular. Soporta gestión de favoritos, transferencias en cola, comparación de directorios y edición remota directa.</p>
+<pre><code class="language-bash">sudo apt install filezilla -y
+# Configurar: Archivo → Gestor de sitios → Nuevo sitio
+# Protocolo: SFTP | Puerto: 22 | Autenticación: Archivo de claves
+</code></pre>
+<h3 id="82-lftp-cliente-avanzado-por-cli">8.2 lftp (cliente avanzado por CLI)</h3>
+<p>Soporta FTP, FTPS, SFTP y ofrece transferencias en paralelo, mirror (sincronización) y scripting avanzado.</p>
+<pre><code class="language-bash">sudo apt install lftp -y
+
+# Sincronizar directorio completo con SFTP
+lftp -e 'mirror -R ./dist/ /var/www/html/; bye' sftp://usuario@servidor
+
+# Con autenticación por clave
+lftp -u usuario, sftp://servidor &lt;&lt;EOF
+set sftp:connect-program 'ssh -i ~/.ssh/id_ed25519'
+mirror -R ./dist/ /var/www/html/
+bye
+EOF
+</code></pre>
+<h3 id="83-integracion-con-cicd-github-actions">8.3 Integración con CI/CD (GitHub Actions)</h3>
+<pre><code class="language-yaml"># .github/workflows/deploy.yml
+name: Deploy to production
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy via rsync
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avzr --delete
+          path: dist/
+          remote_path: /var/www/html/
+          remote_host: ${{ secrets.REMOTE_HOST }}
+          remote_user: ${{ secrets.REMOTE_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
+</code></pre>
+<h3 id="84-comparativa-de-herramientas">8.4 Comparativa de herramientas</h3>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Tipo</th>
+<th>Protocolos</th>
+<th>Puntos fuertes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vsftpd</td>
+<td>Servidor</td>
+<td>FTP, FTPS</td>
+<td>Ligero, muy configurable</td>
+</tr>
+<tr>
+<td>openssh-server</td>
+<td>Servidor</td>
+<td>SFTP, SCP, SSH</td>
+<td>Incluido en Ubuntu, cifrado completo</td>
+</tr>
+<tr>
+<td>FileZilla</td>
+<td>Cliente GUI</td>
+<td>FTP, FTPS, SFTP</td>
+<td>Intuitivo, comparación de directorios</td>
+</tr>
+<tr>
+<td>lftp</td>
+<td>Cliente CLI</td>
+<td>FTP, FTPS, SFTP, HTTP</td>
+<td>Mirror, paralelismo, scripting</td>
+</tr>
+<tr>
+<td>rsync</td>
+<td>Sincronización</td>
+<td>Local / SSH</td>
+<td>Incremental, delta, muy eficiente</td>
+</tr>
+<tr>
+<td>Make</td>
+<td>Automatización</td>
+<td>Cualquiera</td>
+<td>Tareas declarativas, reproducible</td>
+</tr>
+<tr>
+<td>GitHub Actions</td>
+<td>CI/CD</td>
+<td>SSH/rsync</td>
+<td>Integrado con repositorio, gratuito</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-ejercicios-resueltos">9. Ejercicios resueltos</h2>
+<h3 id="er-01-instalar-y-configurar-vsftpd-en-modo-pasivo">ER-01 — Instalar y configurar vsftpd en modo pasivo</h3>
+<p><strong>Enunciado:</strong> El servidor tiene IP <code>192.168.1.50</code>. Instala vsftpd, crea el usuario <code>ftpweb</code> y configura el servidor en modo pasivo con rango de puertos <code>40000-40100</code>.</p>
+<p><strong>Solución:</strong></p>
+<pre><code class="language-bash"># 1. Instalar vsftpd
+sudo apt update &amp;&amp; sudo apt install vsftpd -y
+
+# 2. Crear usuario confinado
+sudo adduser ftpweb --shell /usr/sbin/nologin
+sudo mkdir -p /home/ftpweb/web
+sudo chown ftpweb:ftpweb /home/ftpweb/web
+
+# 3. Configurar /etc/vsftpd.conf
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+chroot_local_user=YES
+allow_writeable_chroot=YES
+pasv_enable=YES
+pasv_min_port=40000
+pasv_max_port=40100
+pasv_address=192.168.1.50
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+
+# 4. Lista blanca y reinicio
+echo 'ftpweb' | sudo tee /etc/vsftpd.userlist
+sudo systemctl restart vsftpd
+sudo ufw allow 21/tcp &amp;&amp; sudo ufw allow 40000:40100/tcp
+
+# 5. Verificar desde el cliente
+ftp 192.168.1.50
+# Introducir: ftpweb / &lt;contraseña&gt;
+ftp&gt; passive
+ftp&gt; ls
+</code></pre>
+<hr />
+<h3 id="er-02-configurar-sftp-con-chroot-y-clave-publica">ER-02 — Configurar SFTP con chroot y clave pública</h3>
+<p><strong>Enunciado:</strong> Configura el servidor SSH para que el usuario <code>deplower</code> solo pueda acceder por SFTP, confinado en <code>/var/www/html</code>, autenticándose únicamente con clave pública.</p>
+<p><strong>Solución:</strong></p>
+<pre><code class="language-bash"># 1. Crear usuario sin shell interactivo
+sudo adduser deplower --shell /usr/sbin/nologin
+
+# 2. Preparar directorios (el chroot DEBE ser propiedad de root)
+sudo chown root:root /var/www/html
+sudo chmod 755 /var/www/html
+sudo mkdir -p /var/www/html/uploads
+sudo chown deplower:deplower /var/www/html/uploads
+
+# 3. Añadir al final de /etc/ssh/sshd_config
+Match User deplower
+    ChrootDirectory /var/www/html
+    ForceCommand internal-sftp
+    AllowTcpForwarding no
+    PasswordAuthentication no
+
+# 4. Generar clave en el cliente y copiarla
+ssh-keygen -t ed25519 -C 'deplower@deploy'
+# Copiar manualmente la clave pública al servidor:
+sudo mkdir -p /home/deplower/.ssh
+sudo chmod 700 /home/deplower/.ssh
+# Pegar contenido de id_ed25519.pub en /home/deplower/.ssh/authorized_keys
+sudo chmod 600 /home/deplower/.ssh/authorized_keys
+sudo chown -R deplower:deplower /home/deplower/.ssh
+
+# 5. Reiniciar SSH y verificar
+sudo systemctl restart ssh
+sftp -i ~/.ssh/id_ed25519 deplower@servidor
+</code></pre>
+<blockquote>
+<p>⚠️ El directorio de chroot debe pertenecer a <code>root</code> y no puede ser escribible por el usuario. Por eso creamos un subdirectorio <code>uploads</code> con permisos del usuario.</p>
+</blockquote>
+<hr />
+<h3 id="er-03-despliegue-con-rsync-y-makefile">ER-03 — Despliegue con rsync y Makefile</h3>
+<p><strong>Enunciado:</strong> Crear un Makefile que despliegue <code>./dist</code> en <code>/var/www/html</code> del servidor <code>10.0.0.5</code> usando rsync sobre SSH, con backup previo automático.</p>
+<p><strong>Solución:</strong></p>
+<pre><code class="language-makefile">SERVER     := deploy@10.0.0.5
+REMOTE     := /var/www/html
+LOCAL      := ./dist
+SSH_KEY    := ~/.ssh/id_ed25519
+BACKUP     := /backups/$(shell date +%Y%m%d_%H%M%S)
+
+.PHONY: deploy backup
+
+backup:
+    ssh -i $(SSH_KEY) $(SERVER) 'cp -r $(REMOTE) $(BACKUP)'
+    @echo 'Backup creado en $(BACKUP)'
+
+deploy: backup
+    rsync -avz --delete -e 'ssh -i $(SSH_KEY)' \
+      $(LOCAL)/ $(SERVER):$(REMOTE)/
+    @echo 'Despliegue OK'
+</code></pre>
+<p>Ejecución y salida esperada:</p>
+<pre><code>$ make deploy
+ssh ... 'cp -r /var/www/html /backups/20250115_093045'
+Backup creado en /backups/20250115_093045
+sending incremental file list
+index.html
+sent 15,234 bytes  received 235 bytes ...
+Despliegue OK
+</code></pre>
+<hr />
+<h2 id="10-practicas">10. Prácticas</h2>
+<blockquote>
+<p><strong>Entorno:</strong> Los alumnos trabajan en parejas. Una máquina actúa como servidor y la otra como cliente. Ambas en la misma red local del aula.</p>
+</blockquote>
+<hr />
+<h3 id="practica-1-ftp-con-vsftpd-60-min">PRÁCTICA 1 — FTP con vsftpd <em>(60 min)</em></h3>
+<p><strong>Objetivo:</strong> Instalar, configurar y probar vsftpd en modo pasivo. Comprender las limitaciones de seguridad del protocolo.</p>
+<p><strong>Materiales:</strong> 2 máquinas Ubuntu · acceso sudo · Wireshark</p>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Instala vsftpd en la máquina servidor.</li>
+<li>Crea el usuario <code>ftpweb</code> y configura vsftpd en modo pasivo con rango <code>41000-41100</code>.</li>
+<li>Desde el cliente, conéctate con <code>ftp</code> y sube un fichero <code>index.html</code>.</li>
+<li>Abre Wireshark en el servidor y captura el tráfico FTP. ¿Puedes ver las credenciales?</li>
+<li>Documenta la configuración y adjunta una captura de pantalla de la sesión activa.</li>
+</ol>
+<blockquote>
+<p>🔍 <strong>Reflexión:</strong> ¿Qué datos habrías expuesto si esta conexión fuera sobre Internet? ¿Cómo lo solucionarías?</p>
+</blockquote>
+<hr />
+<h3 id="practica-2-sftp-con-clave-publica-90-min">PRÁCTICA 2 — SFTP con clave pública <em>(90 min)</em></h3>
+<p><strong>Objetivo:</strong> Configurar SFTP seguro con autenticación por clave pública y jaula chroot.</p>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Instala <code>openssh-server</code> en el servidor (si no está).</li>
+<li>Genera un par de claves <code>ed25519</code> en el cliente.</li>
+<li>Crea el usuario <code>deplower</code> en el servidor y configura la clave pública.</li>
+<li>Añade la directiva <code>Match User</code> en <code>sshd_config</code> para confinar al usuario con <code>ChrootDirectory</code>.</li>
+<li>Desde el cliente, conecta por SFTP y sube el proyecto web al directorio remoto.</li>
+<li>Verifica que <code>deplower</code> <strong>no</strong> puede conectarse por SSH interactivo.</li>
+<li>Comprueba con Wireshark que el tráfico está cifrado (no se ven credenciales).</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Reto opcional:</strong> configura un segundo usuario <code>sftp_ro</code> con permisos de solo lectura sobre el mismo directorio.</p>
+</blockquote>
+<hr />
+<h3 id="practica-3-rsync-makefile-de-despliegue-90-min">PRÁCTICA 3 — rsync + Makefile de despliegue <em>(90 min)</em></h3>
+<p><strong>Objetivo:</strong> Construir un flujo de despliegue profesional usando rsync sobre SSH y un Makefile.</p>
+<p><strong>Escenario:</strong> El equipo ha desarrollado una web estática. Hay que desplegarla en el servidor con:
+- Transferencia incremental (rsync)
+- Backup automático antes de cada despliegue
+- Posibilidad de rollback al backup anterior
+- Exclusión de <code>node_modules</code> y <code>.git</code></p>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Crea la estructura: <code>src/</code>, <code>dist/</code>, <code>Makefile</code>.</li>
+<li>Escribe el Makefile con los targets: <code>check</code>, <code>backup</code>, <code>deploy</code>, <code>sync</code>, <code>rollback</code>, <code>clean</code>.</li>
+<li>Prueba <code>make check</code>: debe verificar la conexión SSH sin pedir contraseña.</li>
+<li>Prueba <code>make deploy</code>: verifica que solo se transfieren los ficheros modificados.</li>
+<li>Modifica un fichero HTML y vuelve a ejecutar <code>make deploy</code>. ¿Cuántos ficheros transfiere rsync?</li>
+<li>Simula un error: borra manualmente un fichero en el servidor y ejecuta <code>make rollback</code>.</li>
+</ol>
+<blockquote>
+<p>📝 <strong>Entrega:</strong> Makefile comentado + captura de la salida de <code>make deploy</code> mostrando la transferencia incremental.</p>
+</blockquote>
+<hr />
+<h3 id="practica-4-ftps-con-certificado-tls-60-min">PRÁCTICA 4 — FTPS con certificado TLS <em>(60 min)</em></h3>
+<p><strong>Objetivo:</strong> Añadir cifrado TLS a vsftpd y comparar el comportamiento con la práctica 1.</p>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Genera un certificado autofirmado con <code>openssl</code>.</li>
+<li>Activa <code>ssl_enable=YES</code> y los parámetros TLS en <code>vsftpd.conf</code>.</li>
+<li>Conéctate desde FileZilla configurando FTPS explícito. Acepta el certificado.</li>
+<li>Captura el tráfico con Wireshark. Compara con la captura de la práctica 1.</li>
+<li>¿Qué diferencias observas en el tráfico capturado?</li>
+</ol>
+<hr />
+<h2 id="11-examen">11. Examen</h2>
+<p><strong>Duración:</strong> 90 minutos · <strong>Material permitido:</strong> apuntes propios (papel) · <strong>Puntuación total:</strong> 10 puntos</p>
+<hr />
+<h3 id="parte-a-preguntas-teoricas-3-puntos-05-pt-cada-una">Parte A — Preguntas teóricas <em>(3 puntos — 0,5 pt cada una)</em></h3>
+<p><strong>1.</strong> ¿Cuál es la diferencia fundamental entre SFTP y FTPS? Indica el puerto por defecto de cada uno.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>2.</strong> Indica dos razones por las que FTP no debe usarse sobre redes públicas.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>3.</strong> ¿Qué diferencia hay entre modo activo y modo pasivo en FTP? ¿Cuál es preferible y por qué?</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>4.</strong> Explica qué es el chroot en el contexto de SFTP y para qué sirve.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>5.</strong> ¿Qué ventaja ofrece rsync frente a SCP para el despliegue de aplicaciones web?</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>6.</strong> En un Makefile, ¿qué significa <code>.PHONY</code> y por qué es recomendable usarlo?</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<h3 id="parte-b-opcion-multiple-2-puntos-025-pt-cada-una">Parte B — Opción múltiple <em>(2 puntos — 0,25 pt cada una)</em></h3>
+<p><em>Rodea la opción correcta. Solo hay una respuesta válida por pregunta.</em></p>
+<p><strong>7.</strong> ¿Qué directiva de <code>sshd_config</code> confina a un usuario para usar solo SFTP?</p>
+<p>a) <code>AllowUsers interno-sftp</code><br />
+b) <code>ForceCommand internal-sftp</code><br />
+c) <code>ChrootDirectory /sftp</code><br />
+d) <code>SubsystemSFTP only</code></p>
+<p><strong>8.</strong> ¿Cuál de las siguientes opciones de rsync borra en el destino los ficheros que no existen en el origen?</p>
+<p>a) <code>--remove</code>  b) <code>--purge</code>  c) <code>--delete</code>  d) <code>--clean</code></p>
+<p><strong>9.</strong> El puerto por defecto de SFTP es:</p>
+<p>a) 21  b) 22  c) 990  d) 2222</p>
+<p><strong>10.</strong> ¿Cuál de estos comandos copia recursivamente <code>./dist</code> al servidor usando SCP?</p>
+<p>a) <code>scp -R ./dist user@server:/var/www/</code><br />
+b) <code>scp -r ./dist user@server:/var/www/</code><br />
+c) <code>scp ./dist/* user@server:/var/www/</code><br />
+d) <code>scp --recurse ./dist user@server:/var/www/</code></p>
+<p><strong>11.</strong> Para generar un par de claves ed25519 en el cliente, el comando correcto es:</p>
+<p>a) <code>ssh-keygen -t rsa</code><br />
+b) <code>ssh-keygen -t ed25519</code><br />
+c) <code>openssl genrsa -out key 2048</code><br />
+d) <code>gpg --gen-key</code></p>
+<p><strong>12.</strong> ¿Qué tipo de cifrado usa FTPS explícito?</p>
+<p>a) SSH  b) IPSec  c) TLS  d) WEP</p>
+<p><strong>13.</strong> En un Makefile, el carácter que precede a los comandos de un target es:</p>
+<p>a) Espacio  b) Coma  c) Tabulador (Tab)  d) Almohadilla (<code>#</code>)</p>
+<p><strong>14.</strong> ¿Cuál de estas herramientas NO es un cliente FTP/SFTP?</p>
+<p>a) FileZilla  b) lftp  c) Wireshark  d) <code>sftp</code> (comando)</p>
+<hr />
+<h3 id="parte-c-supuesto-practico-5-puntos">Parte C — Supuesto práctico <em>(5 puntos)</em></h3>
+<blockquote>
+<p><strong>Escenario:</strong> La empresa TechDeploy S.L. ha desarrollado una aplicación web estática. El servidor de producción tiene IP <code>10.10.0.1</code>, sistema Ubuntu 24.04, y el directorio web es <code>/var/www/techapp</code>.</p>
+</blockquote>
+<p><strong>15. (1 pt)</strong> Configura el servidor SSH para que el usuario <code>webdeploy</code> tenga acceso SFTP únicamente, confinado en <code>/var/www/techapp</code>, con autenticación por clave pública. Escribe los bloques de configuración necesarios en <code>sshd_config</code> y los comandos para crear el usuario y los directorios.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>16. (1 pt)</strong> Escribe el comando rsync completo para sincronizar <code>./dist/</code> con <code>/var/www/techapp</code> en el servidor, usando la clave <code>~/.ssh/id_ed25519</code>, modo verbose, compresión, eliminando ficheros obsoletos y excluyendo <code>node_modules</code> y <code>.git</code>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>17. (2 pt)</strong> Escribe un Makefile completo con los targets: <code>check</code>, <code>backup</code>, <code>deploy</code>, <code>rollback</code>. Usa variables para <code>SERVER</code>, <code>REMOTE_DIR</code>, <code>LOCAL_DIR</code> y <code>SSH_KEY</code>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+<p><strong>18. (1 pt)</strong> El cliente pide mantener también acceso FTP con vsftpd para un sistema legado. ¿Qué medida de seguridad mínima aplicarías y cómo la configurarías? Indica los parámetros <code>vsftpd.conf</code> necesarios.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
